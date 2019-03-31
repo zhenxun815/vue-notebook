@@ -2,28 +2,36 @@
 <template>
   <div>
     <div v-if="!isReg">
-      用户名：
-      <input type="text"
-             v-model="name">
-      密码：
-      <input type="password"
-             v-model="password">
-      <button @click="login">登陆</button>
-      <button @click="reg">注册</button>
+      <div>
+        用户名：
+        <input type="text"
+               v-model="name">
+        密码：
+        <input type="password"
+               v-model="password">
+      </div>
+      <div>
+        <button @click="login">登陆</button>
+        <button @click="reg">注册</button>
+      </div>
     </div>
 
     <div v-else>
-      用户名：
-      <input type="text"
-             v-model="name">
-      密码：
-      <input type="password"
-             v-model="password">
-      确认密码：
-      <input type="password"
-             v-model="repeat">
-      <button @click="addUser">确定</button>
-      <button @click="cancel">取消</button>
+      <div>
+        用户名：
+        <input type="text"
+               v-model="name">
+        密码：
+        <input type="password"
+               v-model="password">
+        确认密码：
+        <input type="password"
+               v-model="repeat">
+      </div>
+      <div>
+        <button @click="addUser">确定</button>
+        <button @click="cancel">取消</button>
+      </div>
     </div>
   </div>
 </template>
@@ -70,5 +78,5 @@ export default {
 }
 
 </script>
-<style scoped>
-</style>
+<style scoped lang="stylus">
+</style>>

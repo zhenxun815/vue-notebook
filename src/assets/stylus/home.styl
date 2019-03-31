@@ -1,0 +1,35 @@
+li {
+  list-style: none;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.tabs {
+  font-size: 16px;
+  flex: 1;
+  text-align: center;
+  border-top: 1px solid #42b983;
+  height: 60px;
+  line-height: 60px;
+
+  a {
+    height: 100%;
+    color: #42b983;
+    display: block;
+    text-decoration: none;
+
+    &.active {
+      color: white;
+      background: #42b983;
+    }
+  }
+}

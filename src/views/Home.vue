@@ -2,11 +2,11 @@
 <template>
   <div>
     <router-view />
-    <ul>
-      <li>
+    <ul class="footer">
+      <li class="tabs">
         <router-link :to="{name: 'list'}">笔记列表</router-link>
       </li>
-      <li>
+      <li class="tabs">
         <router-link :to="{name: 'user'}">个人中心</router-link>
       </li>
     </ul>
@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import '../assets/stylus/home.styl'
+
 export default {
   name: 'Home',
   data () {
@@ -27,5 +29,5 @@ export default {
 }
 
 </script>
-<style scoped>
+<style scoped lang="stylus" >
 </style>
